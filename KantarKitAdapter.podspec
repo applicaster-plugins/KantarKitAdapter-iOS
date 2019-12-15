@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name  = "KantarMediaStreaming"
+  s.name  = "KantarKitAdapter"
   s.version = '1.0.0'
   s.swift_version = '5.1'
   s.platform     = :ios, '10.0'
@@ -8,7 +8,10 @@ Pod::Spec.new do |s|
   s.homepage  = "https://www.kantarmedia.com/us"
   s.license = 'CMPS'
   s.author = { "cmps" => "Applicaster LTD." }
-  s.source = { :http => 'https://dl.bintray.com/applicaster-ltd/pods/SyncNowDetectoriOS.zip' }
+	s.source = {
+						 :git => 'git@github.com:applicaster-plugins/KantarKitAdapter-iOS.git',
+						 :tag => s.version.to_s
+	}
   s.vendored_libraries = 'kantarmedia-streaming-fat.a'
 
   s.requires_arc = true
