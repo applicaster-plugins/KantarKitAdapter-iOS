@@ -1,2 +1,2 @@
 # KantarKitAdapter-iOS
-Pod wrapper for kantarmedia-streaming framework
+Pod wrapper for kantarmedia-streaming library
