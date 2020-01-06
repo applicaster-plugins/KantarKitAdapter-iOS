@@ -12,17 +12,12 @@ Pod::Spec.new do |s|
 						 :git => 'git@github.com:applicaster-plugins/KantarKitAdapter-iOS.git',
 						 :tag => s.version.to_s
 	}
-	s.source_files = 'Library/**/*.{h}'
-	s.library   = 'kantarmedia-streaming-fat'
-	s.preserve_paths = 'Library/**/*.a'
-
-  # s.vendored_libraries = 'kantarmedia-streaming-fat.a'
-	# s.libraries = 'kantarmedia-streaming-fat.a'
+  
+  s.source_files = 'Library/*.{a,h}'
 
   s.requires_arc = true
   s.xcconfig =  { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
                 'ENABLE_BITCODE' => 'YES',
-                'SWIFT_VERSION' => '5.1',
-                'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/KantarKitAdapter/Library"'
+                'SWIFT_VERSION' => '5.1'
               }
 end
